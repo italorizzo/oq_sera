@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        :root{
+            font-size: 150%;
+        }
+        .te_amo {
+            position: absolute;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+            background-color: red;
+            height: 200px;
+            transform: rotate(-45deg);
+            width: 200px;
+            animation: animation 5s;
+        }
+        h1{
+            position: absolute;
+            transform: rotate(45deg);
+            color: white;
+            z-index: 1;
+            width: 200px;
+            text-align: center;
+            left: calc(50% - 70px);
+        }
+        p{
+            color: white;
+            text-align: center;
+            width: 700px;
+            top: calc(50% - 150px);
+            left: calc(50% - 350px);
+            position: absolute;
+            font-size: 150%;
+        }
+        span{
+            color: gray;
+            font-size: 60%;
+        }
+        button{
+            border: 2px solid red;
+            background-color: transparent;
+            border-radius: 2em;
+            text-transform: uppercase;
+            color: white;
+            position: absolute;
+            left: calc(50% - 90px);
+            top: calc(50% + 160px);
+            padding: 20px 40px 20px 40px;
+        }
+        .te_amo:before,
+        .te_amo:after {
+            content: "";
+            background-color: red;
+            border-radius: 50%;
+            height: 200px;
+            position: absolute;
+            width: 200px;
+        }
+
+        .te_amo:before {
+            top: -100px;
+        }
+
+        .te_amo:after {
+            left: 100px;
+        }
+
+        @keyframes animation{
+            0%{
+                margin-top: -200px;
+                opacity: 0;
+            }
+            100%{
+                margin-top: 0;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="te_amo">
+        <h1>te amo!</h1>
+    </div>
+    <button onclick="magia()">Clique aqui</button>
+    <script>
+        function magia(){
+            document.body.innerHTML = `
+            <p>Obrigado por tudo, não sei oq seria de mim sem vc, seria mais fácil eu terminar de contar as estrelas do céu do que tentar falar quanto é o meu amor por você, te amo!!
+            <br>
+            <br>
+            <span>Nunca me senti tão feliz perto de alguém, quanto eu fico com vc!</span></p>`
+        }
+    </script>
+</body>
+</html>
