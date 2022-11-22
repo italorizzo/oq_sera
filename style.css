@@ -1,0 +1,128 @@
+@import url('https://fonts.cdnfonts.com/css/neobulletin-extruded');
+@import url('https://fonts.cdnfonts.com/css/scarlette');
+@import url('https://fonts.cdnfonts.com/css/cantata-one');
+body{
+    background-color: black;
+}
+:root{
+    font-size: 150%;
+}
+header{
+    width: 100%;
+    display: table;
+}
+header > *{
+    display: table-cell;
+    text-align: center;
+}
+header a{
+    transition: 1s all;
+    color: white;
+    text-decoration: none;
+    font-family: 'NeoBulletin Extruded', sans-serif;
+}
+header a:hover{
+    color: red;
+}
+.te_amo {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    background-color: red;
+    height: 200px;
+    transform: rotate(-45deg);
+    width: 200px;
+    animation: animation 5s;
+}
+
+.te_amo h1{
+    position: absolute;
+    transform: rotate(45deg);
+    color: white;
+    z-index: 1;
+    width: 200px;
+    text-align: center;
+    left: calc(50% - 70px);
+    font-family: 'NeoBulletin Extruded', sans-serif;
+}
+.pergunta{
+    position: relative;
+    top: 150px;
+    width: 80%;
+    font-family: 'NeoBulletin Extruded', sans-serif;
+    font-size: 130%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.sim{
+    top: calc(50%);
+    left: calc(35%);
+}
+.não{
+    top: calc(50%);
+    left: calc(55%);
+}
+.cor{
+    color: red;
+}
+p{
+    animation: animation 5s;
+    color: white;
+    text-align: center;
+    width: 80%;
+    top: calc(50% - 40%);
+    left: calc(50% - 40%);
+    position: absolute;
+    font-size: 150%;
+    font-family: 'Scarlette', sans-serif;
+}
+.texto{
+    color: gray;
+    font-size: 50%;
+    font-family: 'Cantata One', sans-serif;
+}
+button{
+    border: 2px solid red;
+    background-color: transparent;
+    border-radius: 2em;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    left: calc(50% - 90px);
+    top: calc(50% + 160px);
+    padding: 20px 40px 20px 40px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(245, 174, 174, 0.281);
+}
+.te_amo:before,
+.te_amo:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+}
+
+.te_amo:before {
+    top: -100px;
+}
+
+.te_amo:after {
+    left: 100px;
+}
+
+@keyframes animation{
+    0%{
+        margin-top: -200px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}

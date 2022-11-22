@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Para o amor da minha vida</title>
+</head>
+<body>
+    <header>
+        <div><a href="index.html">Início</a></div>
+        <div><a href="eu_ela.html">Novo!</a></div>
+    </header>
+    <main>
+        <h1 class="pergunta">Você é a pessoa mais especial na minha vida?</h1>
+        <button class="sim" id="sim">Sim! 🙃</button>
+        <button class="não" id="troll">Não 🥺</button>
+        <script>
+            const troll = document.getElementById('troll')
+            const sim = document.getElementById('sim')
+            const main = document.querySelector('main')
+            troll.addEventListener('click', () => {
+                var x = Math.floor(Math.random() * 501)
+                var y = Math.floor(Math.random() * 1001)
+                troll.style.top = x + 'px'
+                troll.style.left = y + 'px'
+            })
+            sim.addEventListener('click', () => {
+                main.innerHTML = `
+                    <h1 class="pergunta">Como você sabe que é o <span class="cor">amor</span> da minha vida? 🤔</h1>
+                `
+            })
+        </script>
+    </main>
+</body>
+</html>
