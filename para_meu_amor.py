@@ -22,4 +22,12 @@ def tree(i):
         amor.backward(i)
 
 tree(100)
+def txt():  
+    amor.up()
+    amor.setpos(-68, 95) 
+    amor.down()
+    amor.color('white') 
+    amor.write("Te amo!!", font=( 
+      "Verdana", 30, "bold")) 
+txt() 
 turtle.done()

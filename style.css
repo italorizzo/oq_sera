@@ -27,6 +27,7 @@ header a:hover{
 .te_amo {
     position: absolute;
     top: calc(50% - 100px);
+    cursor: pointer;
     left: calc(50% - 100px);
     background-color: red;
     height: 200px;
