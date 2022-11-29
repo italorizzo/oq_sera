@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="mensagem.css">
     <title>Para o amor da minha vida</title>
 </head>
 <body>
@@ -13,13 +15,16 @@
         <div><a href="eu_ela.html">Novo!</a></div>
     </header>
     <main>
-        <div onclick="flor()" class="te_amo">
-            <h1>te amo!</h1>
-        </div>
+        <div onclick="video()" class="te_amo"></div>
+        <h1>te amo!</h1>
+        <video autoplay loop></video>
         <button onclick="magia()">Clique aqui</button>
         <script>
-            function flor(){
-                open('https://replit.com/@italorizzo1/Amor?v=1')
+            function video(){
+                var video = document.querySelector('video')
+                video.innerHTML = `
+                <source src="Video by ESCRITO DE JESUS CALIGRAFI.mp4" type="video/mp4">  `
+                video.style.zIndex = 4
             }
             function magia(){
                 document.body.innerHTML = `

@@ -1,0 +1,22 @@
+.pergunta{
+    position: relative;
+    top: 150px;
+    width: 80%;
+    font-family: 'NeoBulletin Extruded', sans-serif;
+    font-size: 130%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+.sim{
+    top: calc(50%);
+    left: calc(35%);
+}
+.não{
+    top: calc(50%);
+    left: calc(55%);
+}
+.cor{
+    color: red;
+}
